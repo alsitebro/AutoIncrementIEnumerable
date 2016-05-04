@@ -19,7 +19,7 @@ namespace Demo
             List<Item> listOfItems = new List<Item>();
             Console.WriteLine("Generating data...");
             GenerateCollection(listOfItems);
-            Console.WriteLine("Press enter to display data...");
+            Console.WriteLine("Press [ENTER] to display data...");
             Console.ReadLine();
             DisplaysCollectionItems(listOfItems);
             Console.ReadLine();
