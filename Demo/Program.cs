@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Helpers;
 
@@ -18,7 +19,9 @@ namespace Demo
             List<Item> listOfItems = new List<Item>();
 
             Console.WriteLine("Generating data...");
+            Thread.Sleep(3000);
             GenerateCollection(listOfItems);
+            Thread.Sleep(3000);
             Console.WriteLine("Press enter to display data...");
             Console.ReadLine();
             DisplaysCollectionItems(listOfItems);
